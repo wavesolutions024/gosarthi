@@ -1,0 +1,71 @@
+:root {
+  --max-width: 1600px;
+  --accent: #4f46e5;
+  --unit: 14px;
+  --white: #ffffff;
+  --black: #000000;
+  --trans:all 0.5s linear;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  width: 100%;
+  height: auto;
+
+  .cont {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: calc(var(--unit) * 2);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Outfit", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+}
+
+.btn {
+  padding: 8px 16px;
+  background-color: var(--accent);
+  color: var(--white);
+  border-radius: 25px;
+  cursor: pointer;
+  transition: var(--trans);
+  font-size: 16px;
+  font-family: "Outfit", sans-serif;
+
+
+  &:hover{
+    transform: scale(1.02);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+  }
+}
+
+
+.bg-img-cover{
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+.bg-img-contain{
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}

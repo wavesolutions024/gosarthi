@@ -1,0 +1,62 @@
+.herosection_parent{
+    width: 100%;
+    height: 100svh;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+
+    .herosection_cont{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .left{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: var(--unit);
+
+            .header_text{
+                color: var(--accent);
+            }
+
+
+            .hero_heading{
+                max-width: 20ch;
+                font-size: 50px;
+                text-transform: capitalize;
+                color: var(--black);
+            }
+        }
+
+        .right{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .mask_image{
+        width: 60%;
+        aspect-ratio: 1;
+        position: absolute;
+        top: -30%;
+        right: -15%;
+        background: url("../../assets/hero_overlay.jpg");
+        border-radius: 50%;
+        z-index: 1;
+
+    }
+}
