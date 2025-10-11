@@ -1,0 +1,44 @@
+.bf_parent {
+  padding: 50px 10px;
+  background-color: #2218db;
+
+  .bf_cont {
+    display: flex;
+    gap: var(--unit);
+
+    h3 {
+      font-size: 42px;
+      letter-spacing: 0.5px;
+      word-spacing: 1px;
+      line-height: 50px;
+      color: white;
+    }
+    .bf_left {
+      width: 70%;
+    }
+    .bf_right {
+      width: 30%;
+
+      .call-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--unit);
+
+        span {
+          svg {
+            font-size: 50px;
+            color: white;
+          }
+        }
+        .call_text {
+          font-size: 12px;
+          text-transform: uppercase;
+          letter-spacing: 5px;
+          color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.footer_parent {
+  background-color: black;
+  padding: calc(var(--unit) * 2);
+  .footer_cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h4 {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--white);
+    }
+
+    p {
+      color: rgb(187, 187, 187);
+    }
+
+    .footer-wrap {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: calc(var(--unit) * 2);
+      width: 100%;
+      .info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--unit);
+      }
+
+      .quick_link {
+        display: flex;
+        flex-direction: column;
+        gap: var(--unit);
+        cursor: pointer;
+        
+
+        a {
+          color: rgb(187, 187, 187);
+
+          &:hover {
+            color: var(--accent);
+          }
+        }
+      }
+
+      .cont_info {
+        display: flex;
+        flex-direction: column;
+        gap: var(--unit);
+        .contact-wrap {
+          .location {
+            display: flex;
+            gap: calc(var(--unit));
+            display: flex;
+            align-items: center;
+
+            span {
+              svg {
+                fill: var(--accent);
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .social_icon {
+        display: flex;
+        flex-direction: column;
+        gap: var(--unit);
+
+        .social-wrap {
+          display: flex;
+          gap: var(--unit);
+
+          span {
+            background: rgba(206, 206, 251, 0.19);
+            padding: 10px;
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: var(--trans);
+
+            svg {
+              fill: var(--accent);
+              font-size: 18px;
+            }
+
+            &:hover {
+              background-color: var(--accent);
+              svg {
+                fill: var(--white);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

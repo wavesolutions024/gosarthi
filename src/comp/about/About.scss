@@ -1,0 +1,32 @@
+.about-parent {
+  padding: 50px 0px;
+
+  .about-cont {
+    display: flex;
+
+    .about-left {
+      width: 50%;
+      padding: calc(var(--unit));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      h3 {
+        font-size: 42px;
+        letter-spacing: 0.5px;
+        word-spacing: 1px;
+        line-height: 50px;
+        span {
+          color: var(--accent);
+        }
+      }
+    }
+
+    .about-right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

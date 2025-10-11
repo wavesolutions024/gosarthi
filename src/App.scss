@@ -5,6 +5,8 @@
   --white: #ffffff;
   --black: #000000;
   --trans:all 0.5s linear;
+  --bg: #f8f8f8;
+  --text: rgb(69, 69, 69);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
@@ -39,6 +41,11 @@ h6 {
 
 p {
   font-family: "Inter", sans-serif;
+  line-height: 30px;
+  color: var(--text);
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  word-spacing: 0.7px;
 }
 
 .btn {
