@@ -3,7 +3,7 @@ import "./Header.scss";
 
 import logo from "../../assets/temp_logo.png";
 import Hamburger from "hamburger-react";
-const Header = () => {
+const Header = ({setPopUp}) => {
   const [active, setActive] = useState(false);
   const [isOpen, setOpen] = useState(false);
   useEffect(() => {
@@ -42,7 +42,7 @@ const Header = () => {
             <a href="">Gallery</a>
           </div>
           <div class="contact_us">
-            <div class="btn">Contact Us</div>
+            <div class="btn" onClick={()=>setPopUp(true)} >Contact Us</div>
           </div>
 
           <div class="hamburger">
