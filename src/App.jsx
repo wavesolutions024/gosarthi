@@ -11,6 +11,9 @@ import Header from "./comp/header/Header";
 import BeforeHeader from "./comp/before_header/BeforeHeader";
 import ContactPopup from "./comp/contact_popup/ContactPopup";
 import Faq from "./comp/faq/Faq";
+import Gallery from "./comp/gallery/Gallery";
+import Info from "./comp/info/Info";
+import NotFound from "./comp/notfound/NotFound";
 
 function App() {
   const [popup, setPopUp] = useState(false);
@@ -23,7 +26,7 @@ function App() {
         <Header setPopUp={setPopUp} />
         <Herosection />
         <About />
-        {/* <Info /> */}
+        <Info />
         <Facilities />
         <Gallery />
         <Faq />
