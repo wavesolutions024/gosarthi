@@ -4,7 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 const ContactPopup = ({setPopUp}) => {
   return (
     <>
-      <div class="contact_popup parent">
+      <div class="contact_popup parent bg-img-cover">
 
         <div class="contact_cont cont">
           <form action="">
