@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./App.scss";
 import Herosection from "./comp/herosection/Herosection";
@@ -7,12 +7,19 @@ import About from "./comp/about/About";
 import Footer from "./comp/footer/Footer";
 import BeforeFooter from "./comp/before-footer/BeforeFooter";
 import { FaWhatsapp } from "react-icons/fa";
-import Info from "./comp/info/Info";
+import Header from "./comp/header/Header";
+import BeforeHeader from "./comp/before_header/BeforeHeader";
+import ContactPopup from "./comp/contact_popup/ContactPopup";
 
 function App() {
+  const [popup, setPopUp] = useState(false);
+
   return (
     <>
       <div class="app">
+        {popup && <ContactPopup setPopUp={setPopUp} />}
+        <BeforeHeader />
+        <Header setPopUp={setPopUp} />
         <Herosection />
         <About />
         <Info />

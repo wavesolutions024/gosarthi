@@ -24,9 +24,9 @@
   height: auto;
 
   .cont {
-    max-width: var(--max-width);
+    width: var(--max-width);
     margin: 0 auto;
-    padding: calc(var(--unit) * 2);
+    padding: 0px 20px;
   }
 }
 

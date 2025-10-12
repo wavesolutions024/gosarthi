@@ -1,0 +1,46 @@
+.before_header {
+  background-color: black;
+  width: 100%;
+  padding: 8px 0px;
+  height: 40px;
+
+  .before_header_cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: calc(var(--unit) / 2);
+
+        span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: var(--accent);
+        }
+
+        .text {
+          color: white;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--unit);
+
+      a {
+        color: var(--accent);
+      }
+    }
+  }
+}
