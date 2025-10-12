@@ -2,7 +2,7 @@
   display: flex;
   align-items: stretch;
   justify-content: center;
-  padding: 50px 0px;
+  // padding: 50px 0px;
   .facility-left {
     width: 50%;
     background: url("../../assets/facility.jpg");
@@ -16,7 +16,7 @@
     justify-content: center;
     gap: calc(var(--unit) * 2);
     padding: 50px;
-    background: var(--bg);
+    // background: var(--bg);
 
     h2 {
       font-size: 42px;
@@ -34,13 +34,14 @@
         background: rgb(235, 235, 235);
         padding: 8px 16px;
         border-radius: 25px;
+        
         cursor: pointer;
         transition: var(--trans);
         font-size: 16px;
         &.active {
           padding: 8px 16px;
           background-color: var(--accent);
-          color: var(--white);
+          color: var(--black);
           border-radius: 25px;
           cursor: pointer;
           transition: var(--trans);

@@ -1,6 +1,6 @@
 :root {
   --max-width: 1600px;
-  --accent: #4f46e5;
+  --accent: #ffde00;
   --unit: 14px;
   --white: #ffffff;
   --black: #000000;
@@ -51,7 +51,7 @@ p {
 .btn {
   padding: 8px 16px;
   background-color: var(--accent);
-  color: var(--white);
+  color: var(--black);
   border-radius: 25px;
   cursor: pointer;
   transition: var(--trans);
