@@ -7,6 +7,7 @@ import About from './comp/about/About'
 import Footer from './comp/footer/Footer'
 import BeforeFooter from './comp/before-footer/BeforeFooter'
 import { FaWhatsapp } from "react-icons/fa";
+import Header from './comp/header/Header'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <>
       <div class="app">
+        <Header/>
         <Herosection/>
         <About />
         <Facilities />
