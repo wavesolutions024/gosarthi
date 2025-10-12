@@ -31,3 +31,19 @@
     }
   }
 }
+
+@media (max-width: 1000px) {
+  .about-parent {
+    .about-cont {
+      flex-direction: column;
+
+      .about-left {
+        width: 100%;
+      }
+
+      .about-right {
+        width: 100%;
+      }
+    }
+  }
+}

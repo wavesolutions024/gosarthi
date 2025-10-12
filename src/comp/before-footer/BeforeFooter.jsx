@@ -5,7 +5,7 @@ import { MdPhone } from "react-icons/md";
 const BeforeFooter = () => {
   return (
     <>
-      <div className="parent bf_parent">
+      <div className="parent bf_parent bg-img-cover">
         <div className="cont bf_cont">
           <div className="bf_left">
             <h3>

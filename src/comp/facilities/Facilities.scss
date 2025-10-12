@@ -1,4 +1,4 @@
-.parent {
+.facility_parent {
   display: flex;
   align-items: stretch;
   justify-content: center;
@@ -34,7 +34,7 @@
         background: rgb(235, 235, 235);
         padding: 8px 16px;
         border-radius: 25px;
-        
+
         cursor: pointer;
         transition: var(--trans);
         font-size: 16px;
@@ -48,6 +48,18 @@
           font-size: 16px;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .facility_parent {
+    flex-direction: column;
+    .facility-left {
+      width: 100%;
+    }
+    .facility-right {
+      width: 100%;
     }
   }
 }

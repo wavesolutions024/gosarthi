@@ -1,0 +1,39 @@
+.gallery-parent {
+    padding: 50px 0px;
+  .gallery-cont {
+    display: flex;
+    .wrap-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--unit);
+      width: 100%;
+
+      .box {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        gap: var(--unit);
+        border-radius: calc(var(--unit) / 2);
+      }
+
+      .box1{
+        background: url("../../assets/car1.jpg");
+      }
+      .box2{
+        background: url("../../assets/car2.jpg");
+      }
+      .box3{
+        background: url("../../assets/car3.jpg");
+      }
+      .box4{
+        background: url("../../assets/car3.jpg");
+      }
+      .box5{
+        background: url("../../assets/car1.jpg");
+      }
+      .box6{
+        background: url("../../assets/car2.jpg");
+      }
+    }
+  }
+}

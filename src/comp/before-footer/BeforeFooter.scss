@@ -1,6 +1,12 @@
 .bf_parent {
   padding: 50px 10px;
-  background-color: #2218db;
+  background: linear-gradient(rgba(0, 0, 0, 0.448), rgba(0, 0, 0, 0.448)),
+    url("../../assets/bg_car.jpg");
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   .bf_cont {
     display: flex;
@@ -37,6 +43,52 @@
           text-transform: uppercase;
           letter-spacing: 5px;
           color: white;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .bf_parent {
+   flex-direction: column;
+
+    .bf_cont {
+      display: flex;
+      gap: var(--unit);
+
+      h3 {
+        font-size: 42px;
+        letter-spacing: 0.5px;
+        word-spacing: 1px;
+        line-height: 50px;
+        color: white;
+      }
+      .bf_left {
+        width: 70%;
+      }
+      .bf_right {
+        width: 30%;
+
+        .call-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: var(--unit);
+
+          span {
+            svg {
+              font-size: 50px;
+              color: white;
+            }
+          }
+          .call_text {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: white;
+          }
         }
       }
     }
