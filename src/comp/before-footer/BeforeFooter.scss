@@ -1,10 +1,19 @@
 .bf_parent {
   padding: 50px 10px;
-  background-color: #2218db;
+  background: url("../../assets/before_after.jpeg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  
 
   .bf_cont {
     display: flex;
     gap: var(--unit);
+
+
 
     h3 {
       font-size: 42px;

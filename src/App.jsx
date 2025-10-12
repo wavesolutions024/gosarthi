@@ -10,6 +10,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import Header from "./comp/header/Header";
 import BeforeHeader from "./comp/before_header/BeforeHeader";
 import ContactPopup from "./comp/contact_popup/ContactPopup";
+import Faq from "./comp/faq/Faq";
 
 function App() {
   const [popup, setPopUp] = useState(false);
@@ -22,8 +23,9 @@ function App() {
         <Header setPopUp={setPopUp} />
         <Herosection />
         <About />
-        <Info />
+        {/* <Info /> */}
         <Facilities />
+        <Faq />
         <BeforeFooter />
         <Footer />
 
