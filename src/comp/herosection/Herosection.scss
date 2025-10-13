@@ -22,6 +22,7 @@
       justify-content: center;
       align-items: flex-start;
       gap: var(--unit);
+      padding: 10px 0px;
 
       .header_text {
         color: var(--accent);
@@ -36,7 +37,7 @@
 
       .hero_para {
         font-size: calc(var(--unit) + 5px);
-        line-height: 110%;
+        line-height: 150%;
         text-transform: capitalize;
         max-width: 50ch;
       }

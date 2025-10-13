@@ -19,6 +19,9 @@ const Info = () => {
     <>
       <div className="parent info_parent">
         <div className="cont info_cont">
+          <h1>
+            Calulate Your Trip
+          </h1>
           <div className="info-wrap">
             <div className="custom-select" onClick={() => setOpen(!open)}>
               <div className="select_input">
