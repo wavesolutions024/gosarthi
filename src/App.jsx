@@ -27,8 +27,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <BeforeFooter />
-          <Footer />
+          {/* <BeforeFooter /> */}
+          {/* <Footer /> */}
         </BrowserRouter>
       </div>
     </>
