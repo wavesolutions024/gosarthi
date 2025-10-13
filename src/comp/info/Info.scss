@@ -64,7 +64,7 @@
 
       .form-row {
         width: calc(100% / 4 - var(--unit));
-        
+
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -78,6 +78,24 @@
           outline: none;
           border: 1px solid black;
           padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .info_parent {
+    .info_cont {
+      .info-wrap {
+        flex-direction: column;
+
+        .custom-select {
+          width: 100%;
+        }
+
+        .form-row {
+          width: 100%;
         }
       }
     }

@@ -13,8 +13,6 @@
     display: flex;
     gap: var(--unit);
 
-
-
     h3 {
       font-size: 42px;
       letter-spacing: 0.5px;
@@ -54,36 +52,51 @@
 
 @media (max-width: 1000px) {
   .bf_parent {
-   flex-direction: column;
-
     .bf_cont {
-      display: flex;
-      gap: var(--unit);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0px;
 
       h3 {
-        font-size: 42px;
-        letter-spacing: 0.5px;
-        word-spacing: 1px;
-        line-height: 50px;
+        font-size: 36px;
+        line-height: 40px;
         color: white;
       }
+
       .bf_left {
-        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
       }
       .bf_right {
-        width: 30%;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .bf_parent {
+    .bf_cont {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px 0px;
+
+      h3 {
+        font-size: 24px;
+        line-height: 30px;
+        color: white;
+      }
+      .bf_right {
+        width: 100%;
 
         .call-wrap {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: var(--unit);
-
           span {
             svg {
-              font-size: 50px;
-              color: white;
+              font-size: 30px;
             }
           }
           .call_text {

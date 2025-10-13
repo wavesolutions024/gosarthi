@@ -35,7 +35,7 @@ const Info = () => {
                 )}
               </div>
               {open && (
-                <div class="option_list">
+                <div className="option_list">
                   {cars.map((item, index) => (
                     <div
                       className="option"
@@ -54,7 +54,7 @@ const Info = () => {
               )}
             </div>
 
-            <div class="form-row">
+            <div className="form-row">
               <label for="">Km Rate</label>
               <input
                 type="text"
@@ -63,7 +63,7 @@ const Info = () => {
                 disabled
               />
             </div>
-            <div class="form-row">
+            <div className="form-row">
                <label for="">Enter Total Kilometer</label>
               <input
                 type="text"
@@ -72,7 +72,7 @@ const Info = () => {
                 onChange={(e) => setTotalKm(e.target.value)}
               />
             </div>
-            <div class="form-row">
+            <div className="form-row">
                <label for=""> Total Amount</label>
               <input
                 type="text"
