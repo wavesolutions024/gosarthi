@@ -1,5 +1,6 @@
 import React from "react";
 import "./NotFound.scss";
+import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
@@ -12,9 +13,9 @@ const NotFound = () => {
               Looks like this page is missing. Don't worry though, our best team
               is on the case.
             </p>
-            <div className="btn" style={{ width: "fit-content" }}>
+            <Link to="/" className="btn" style={{ width: "fit-content" }}>
               Go Back
-            </div>
+            </Link>
           </div>
           <div className="right_notfound">
             <span>404</span>

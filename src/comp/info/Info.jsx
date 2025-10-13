@@ -5,10 +5,12 @@ import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
 const Info = () => {
   const cars = [
-    { id: 1, name: "Jeep Renegade", image: car },
-    { id: 2, name: "Audi Q3", image: car },
-    { id: 3, name: "BMW X1", image: car },
+    { id: 1, name: "Jeep Renegade", image: car, rate: 30 },
+    { id: 2, name: "Audi Q3", image: car, rate: 14 },
+    { id: 3, name: "BMW X1", image: car, rate: 13 },
   ];
+
+  const [totalKm, setTotalKm] = useState();
 
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(null);
@@ -19,48 +21,66 @@ const Info = () => {
         <div className="cont info_cont">
           <div className="info-wrap">
             <div className="custom-select" onClick={() => setOpen(!open)}>
-              <div className="selected">
-                {selected ? (
-                  <>
-                    <img src={selected.image} alt={selected.name} />
-                    <span>
-                      <strong>{selected.name}</strong>
-                    </span>
-                  </>
+              <div className="select_input">
+                {selected !== null ? (
+                  <p>{cars[selected]?.name}</p>
                 ) : (
-                  <span className="placeholder">Select Cars</span>
+                  <>
+                    <p>Select Car</p>
+
+                    <div class="icon">
+                      {!open ? <IoIosArrowDown /> : <IoIosArrowUp />}
+                    </div>
+                  </>
                 )}
-
-                {/* Arrow icon toggle */}
-                <span className={`arrow-icon ${open ? "open" : ""}`}>
-                  {open ? <IoIosArrowUp /> : <IoIosArrowDown />}
-                </span>
               </div>
-
               {open && (
-                <div className="options">
-                  {cars.map((car) => (
+                <div class="option_list">
+                  {cars.map((item, index) => (
                     <div
-                      key={car.id}
                       className="option"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        setSelected(car);
-                        setOpen(false);
-                      }}
+                      value=""
+                      key={index}
+                      onClick={() => setSelected(index)}
                     >
-                      <img src={car.image} alt={car.name} />
                       <span>
-                        <strong>{car.name}</strong>
+                        {" "}
+                        <img src={item.image} alt="" />{" "}
                       </span>
+                      {item.name}
                     </div>
                   ))}
                 </div>
               )}
             </div>
 
-            <div className="kilometers">Rs.25 / km</div>
-            <div className="kilometers">Distance</div>
+            <div class="form-row">
+              <label for="">Km Rate</label>
+              <input
+                type="text"
+                placeholder="Km Rate"
+                value={cars[selected]?.rate}
+                disabled
+              />
+            </div>
+            <div class="form-row">
+               <label for="">Enter Total Kilometer</label>
+              <input
+                type="text"
+                placeholder="Total Km"
+                value={totalKm}
+                onChange={(e) => setTotalKm(e.target.value)}
+              />
+            </div>
+            <div class="form-row">
+               <label for=""> Total Amount</label>
+              <input
+                type="text"
+                placeholder="Total Rate"
+                value={totalKm * cars[selected]?.rate || ""}
+                disabled
+              />
+            </div>
           </div>
         </div>
       </div>
