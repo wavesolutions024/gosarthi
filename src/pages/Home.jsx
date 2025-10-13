@@ -6,6 +6,7 @@ import Info from "../comp/info/Info";
 import Facilities from "../comp/facilities/Facilities";
 import Gallery from "../comp/gallery/Gallery";
 import Faq from "../comp/faq/Faq";
+import Vehicels from '../comp/vehicels/Vehicels';
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
         <Herosection />
          <Info />
         <About  />
-       
+       <Vehicels/>
         <Facilities />
         <Gallery />
         <Faq />

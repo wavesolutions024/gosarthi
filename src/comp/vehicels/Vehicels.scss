@@ -1,0 +1,93 @@
+.vehicels_parent {
+  width: 100%;
+  padding: 50px 0px;
+  background: var(--white);
+
+  .vehicels_cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--unit) * 2);
+
+
+    h2{
+        padding: 10px 0px;
+        border-bottom: 2px solid var(--accent);
+    }
+
+    .list {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: var(--unit);
+
+      .vehicle_card {
+        width: calc(100% / 4 - var(--unit));
+        
+     overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--unit);
+        height: 300px;
+        background-color: white;
+        box-shadow: var(--shadow);
+        border-radius: 15px;
+
+        img {
+          height: 80%;
+          width: 100%;
+        }
+        .bottom {
+          height: 20%;
+          width: 100%;
+          border-top: 1px solid var(--text);
+          padding: 0px 8px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .vehicels_parent {
+    .vehicels_cont {
+      .list {
+        .vehicle_card {
+          width: calc(100% / 3 - var(--unit));
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .vehicels_parent {
+    .vehicels_cont {
+      .list {
+        .vehicle_card {
+          width: calc(100% / 2 - var(--unit));
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .vehicels_parent {
+    .vehicels_cont {
+      .list {
+        .vehicle_card {
+          width: calc(100%);
+        }
+      }
+    }
+  }
+}
