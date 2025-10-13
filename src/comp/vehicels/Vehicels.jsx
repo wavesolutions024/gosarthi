@@ -4,23 +4,23 @@ import imag1 from "../../assets/car.jpeg";
 const Vehicels = () => {
   const vehicle_image = [
     {
-      name: "Car 1",
+      name: "Innova",
       image: imag1,
     },
     {
-      name: "Car 1",
+      name: "Ertiga",
       image: imag1,
     },
     {
-      name: "Car 1",
+      name: "Swift",
       image: imag1,
     },
     {
-      name: "Car 1",
+      name: "Zest",
       image: imag1,
     },
     {
-      name: "Car 1",
+      name: "Verna",
       image: imag1,
     },
   ];
@@ -35,8 +35,8 @@ const Vehicels = () => {
               <div class="vehicle_card" key={index}>
                 <img src={item.image} alt="" />
                 <div class="bottom">
-                    <h1>{item.name}</h1>
-                    <div class="btn">Contact Now</div>
+                  <h2>{item.name}</h2>
+                  <div class="btn">Contact Now</div>
                 </div>
               </div>
             ))}
