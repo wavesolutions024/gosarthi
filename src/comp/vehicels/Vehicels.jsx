@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Vehicels.scss";
 import imag1 from "../../assets/car.jpeg";
+import { FaArrowUpLong } from "react-icons/fa6";
+
 const Vehicels = () => {
+  const [showInfo, setShowInfo] = useState(false);
+
   const vehicle_image = [
     {
       name: "Innova",
@@ -29,14 +33,30 @@ const Vehicels = () => {
       <div class="vehicels_parent parent">
         <div class="vehicels_cont cont">
           <h2>Our Vehicels</h2>
-
-          <div class="list">
+          <div className="list">
             {vehicle_image.map((item, index) => (
-              <div class="vehicle_card" key={index}>
+              <div className="vehicle_card" key={index} onMouseLeave={() => setShowInfo(false)}>
+                <div class="tag">15rs/km</div>
                 <img src={item.image} alt="" />
-                <div class="bottom">
-                  <h2>{item.name}</h2>
-                  <div class="btn">Contact Now</div>
+                <h2>{item.name}</h2>
+                <div className="bottom">
+                  <span
+                    className="arrow_info"
+                    onClick={() => setShowInfo(index)}
+                  >
+                    Info
+                    <FaArrowUpLong />
+                  </span>
+                  <div className="btn">Contact Now</div>
+                </div>
+
+                <div
+                  className={`info_card ${showInfo === index ? "show" : ""}`}
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  explicabo possimus, similique non quibusdam alias. Lorem ipsum
+                  dolor sit amet consectetur adipisicing elit. Et explicabo
+                  possimus, similique non quibusdam alias.
                 </div>
               </div>
             ))}

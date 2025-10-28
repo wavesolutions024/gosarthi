@@ -31,10 +31,50 @@
         justify-content: center;
         align-items: center;
         gap: var(--unit);
-        height: 300px;
+        height: auto;
         background-color: white;
         box-shadow: var(--shadow);
         border-radius: 15px;
+        position: relative;
+
+        .tag {
+          background-color: rgb(230, 230, 230);
+          color: var(--black);
+          padding: 5px 10px;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          border-radius: 25px;
+          font-size: 14px;
+        }
+
+        .info_card {
+          background: rgb(218, 218, 218);
+          color: black;
+          padding: var(--unit);
+          border-radius: var(--unit);
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: calc(var(--unit) * 1.5);
+          letter-spacing: 0.7px;
+          word-spacing: 1px;
+          transition: all 0.3s ease-in-out;
+          text-align: center;
+        }
+        .show {
+          top: 0;
+        }
+
+        h2 {
+          font-size: 24px;
+          font-weight: 400;
+        }
 
         img {
           height: 80%;
@@ -49,10 +89,21 @@
           justify-content: space-between;
           align-items: center;
 
+          .arrow_info {
+            background: var(--bg);
+            color: var(--black);
+            padding: 5px 15px;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: calc(var(--unit) / 2);
+            box-shadow: var(--shadow);
+            cursor: pointer;
 
-          h2{
-            font-size: 24px;
-            font-weight: 400;
+            svg {
+              font-size: 13px;
+            }
           }
         }
       }
