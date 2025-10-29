@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <Herosection />
-      <Info />
+      {/* <Info /> */}
       <About />
       <Vehicels />
       <Facilities />
