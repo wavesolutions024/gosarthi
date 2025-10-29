@@ -3,7 +3,7 @@
   .packagee_cont {
     width: 100%;
     .swiper {
-      width: 55%;
+      width: 70%;
       padding-top: 50px;
       padding-bottom: 50px;
 
@@ -23,7 +23,7 @@
     .swiper-slide {
       background-position: center;
       background-size: cover;
-      width: 300px;
+
       height: 300px;
       border-radius: 10px 10px 0px 0px;
     }
@@ -34,6 +34,20 @@
       height: 100%;
       border-radius: 10px 10px 0px 0px;
       object-fit: cover;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .packagee_parent {
+    padding: 50px 0px;
+    .packagee_cont {
+      width: 100%;
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
     }
   }
 }

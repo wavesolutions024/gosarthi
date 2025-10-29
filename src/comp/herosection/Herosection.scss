@@ -1,11 +1,15 @@
 .herosection_parent {
   width: 100%;
   height: 100svh;
-  // background-color: white;
   background-image: url("../../assets/hero_bg.jpg");
   position: relative;
   overflow: hidden;
   background-position: bottom center !important;
+
+
+   .hero_swiper {
+    height: 100%;
+  }
   
 
   .herosection_cont {

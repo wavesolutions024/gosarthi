@@ -125,16 +125,20 @@ p {
   }
 }
 
-
-@media (max-width:600px){
+@media (max-width: 600px) {
   .call {
-  background: rgb(91, 91, 255);
-  padding: var(--unit);
-  border-radius: 5px 0px 0px 5px;
-  width: fit-content;
-  position: fixed;
-  right: 0;
-  bottom: 20%;
-
+    background: rgb(91, 91, 255);
+    padding: var(--unit);
+    border-radius: 5px 0px 0px 5px;
+    width: fit-content;
+    position: fixed;
+    right: 0;
+    bottom: 20%;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--accent) !important;
+  font-size: 30px;
 }

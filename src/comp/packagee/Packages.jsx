@@ -4,12 +4,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import lonavala from "../../assets/lonavala.jpg";
 import mahabaleshwar from "../../assets/Mahabaleshwar.jpg";
 
 const Packages = () => {
-    
   const data = [
     {
       image: lonavala,
@@ -50,7 +49,8 @@ const Packages = () => {
             breakpoints={{
               0: { slidesPerView: 1 },
               600: { slidesPerView: 1 },
-              1024: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 3 },
             }}
             coverflowEffect={{
               rotate: 50,
@@ -59,8 +59,8 @@ const Packages = () => {
               modifier: 1,
               slideShadows: true,
             }}
-            pagination={true}
-            modules={[EffectCoverflow, Pagination]}
+            navigation={true}
+            modules={[EffectCoverflow, Navigation]}
             className="mySwiper"
           >
             {data.map((item) => (
