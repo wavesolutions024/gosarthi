@@ -40,6 +40,7 @@ const Packages = () => {
     <>
       <div className="parent packagee_parent">
         <div className="cont packagee_cont">
+          <h2>Tours and Packages</h2><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dignissimos dicta voluptate dolorum nobis accusamus excepturi fugit. Quis provident, rem quidem vero doloremque, aliquid debitis magni blanditiis corrupti obcaecati itaque.</p>
           <Swiper
             effect={"coverflow"}
             grabCursor={true}
