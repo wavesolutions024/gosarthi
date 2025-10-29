@@ -47,3 +47,21 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .about-parent {
+    .about-cont {
+      .about-left {
+        h3 {
+          font-size: 24px;
+          letter-spacing: 0.5px;
+          word-spacing: 1px;
+          line-height: 30px;
+          span {
+            color: var(--accent);
+          }
+        }
+      }
+    }
+  }
+}
