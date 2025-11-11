@@ -19,7 +19,7 @@ const BeforeFooter = () => {
                 <MdPhone />
               </span>
               <span className="call_text">Call Us Now</span>
-              <h3>1 200 333 800</h3>
+              <h3>8482940705</h3>
               <div className="btn">Contact Us</div>
             </div>
           </div>

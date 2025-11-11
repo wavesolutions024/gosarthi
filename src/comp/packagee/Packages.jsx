@@ -42,10 +42,7 @@ const Packages = () => {
         <div className="cont packagee_cont">
           <h2>Tours and Packages</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
-            dignissimos dicta voluptate dolorum nobis accusamus excepturi fugit.
-            Quis provident, rem quidem vero doloremque, aliquid debitis magni
-            blanditiis corrupti obcaecati itaque.
+          Explore the beauty of Maharashtra with our specially curated travel experiences. Whether you're looking for a quick weekend getaway or a scenic road trip through the Western Ghats, we’ve got you covered. Discover stunning forts, lush valleys, and serene hill stations — all just a drive away from Pune!
           </p>
           <Swiper
             effect={"coverflow"}

@@ -66,6 +66,24 @@
           word-spacing: 1px;
           transition: all 0.3s ease-in-out;
           text-align: center;
+
+          .price_content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .price{
+             border-bottom: 3px solid var(--accent);
+         
+            }
+
+            .contentt, .head{
+              font-size: 22px;
+              font-weight: 500;
+
+            }
+          }
         }
         .show {
           top: 0;
@@ -77,8 +95,9 @@
         }
 
         img {
-          height: 80%;
+          height: 200px;
           width: 100%;
+          object-fit: cover;
         }
         .bottom {
           height: 20%;
