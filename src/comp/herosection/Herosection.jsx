@@ -1,6 +1,6 @@
 import React from "react";
 import "./Herosection.scss";
-import hro_img1 from "../../assets/swift.png";
+import hro_img1 from "../../assets/car_p.png";
 import hro_img2 from "../../assets/ertiga.png";
 import hro_img3 from "../../assets/innova.png";
 
@@ -45,7 +45,7 @@ const Herosection = () => {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 4000000,
+            delay: 4000,
             disableOnInteraction: false,
           }}
           // pagination={{ clickable: true }}
