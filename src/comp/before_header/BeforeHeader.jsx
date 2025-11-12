@@ -14,7 +14,7 @@ const BeforeHeader = () => {
               <span>
                 <FaPhone />
               </span>
-              <span className="text">+91 1234 567 890</span>
+              <span className="text">+91 8482940705</span>
             </a>
           </div>
 

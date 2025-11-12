@@ -37,7 +37,7 @@ const Footer = () => {
                   <span>
                     <MdPhone />
                   </span>
-                  <p>+91 9568972364</p>
+                  <p>+91 8482940705</p>
                 </div>
                 <div className="location">
                   <span>
@@ -54,7 +54,7 @@ const Footer = () => {
               <a>Features</a>
               <a>Blog</a>
               <a>Carrer</a>
-              <a>Gallery</a>
+              <a>Packages</a>
             </div>
           
             <div className="social_icon">

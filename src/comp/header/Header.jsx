@@ -39,7 +39,7 @@ const Header = ({setPopUp}) => {
             <a href="">About</a>
             <a href="">Our Vehicels</a>
             <a href="">Facilities</a>
-            <a href="">Gallery</a>
+            <a href="">Packages</a>
           </div>
           <div class="contact_us">
             <div class="btn" onClick={()=>setPopUp(true)} >Contact Us</div>
