@@ -1,8 +1,8 @@
 import React from "react";
 import "./Herosection.scss";
-import hro_img1 from "../../assets/car_p.png";
-import hro_img2 from "../../assets/ertiga.png";
-import hro_img3 from "../../assets/innova.png";
+import hro_img1 from "../../assets/car_p.webp";
+import hro_img2 from "../../assets/slide2.webp";
+import hro_img3 from "../../assets/slide3.webp";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -45,7 +45,7 @@ const Herosection = () => {
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 4000,
+            delay: 4000000,
             disableOnInteraction: false,
           }}
           // pagination={{ clickable: true }}
@@ -53,17 +53,22 @@ const Herosection = () => {
           modules={[Autoplay, Navigation]}
           className="hero_swiper"
         >
+         
           {heroSlides.map((slide, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide
+              key={index}
+              className="bg-img-cover"
+              style={{ backgroundImage: `url(${slide.img})` }}
+            >
+               <div class="overlay_hero"></div>
               <div className="herosection_cont cont">
-                <div className="left">
+                <div class="hero_content">
                   <h4 className="header_text">{slide.title}</h4>
                   <h1 className="hero_heading">{slide.heading}</h1>
                   <p className="hero_para">{slide.desc}</p>
-                  <div className="btn">{slide.btnText}</div>
-                </div>
-                <div className="right">
-                  <img src={slide.img} alt={`hero-slide-${index}`} />
+                  <div className="btn" style={{ width: "fit-content" }}>
+                    {slide.btnText}
+                  </div>
                 </div>
               </div>
             </SwiperSlide>

@@ -92,7 +92,6 @@ p {
   z-index: 999;
   // height: 60px;
 
-
   span {
     display: flex;
     align-items: center;
@@ -142,17 +141,25 @@ p {
   }
 }
 
+@media (max-width: 650px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    svg{
+      width: 60% !important;
+      height: 60% !important;
+    }
+  }
+}
+
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--accent) !important;
   font-size: 30px;
 }
 
-
-@media(max-width: 600px) {
-  h2{
+@media (max-width: 600px) {
+  h2 {
     font-size: 24px !important;
     text-align: center;
   }
 }
-
