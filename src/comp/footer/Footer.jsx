@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="cont footer_cont">
           <div className="footer-wrap">
             <div className="info">
-              <h4>About Rentaly</h4>
+              <h4>About GoSarthi</h4>
               <p>
                 Where quality meets affordability. We understand the importance
                 of a smooth and enjoyable journey without the burden of
