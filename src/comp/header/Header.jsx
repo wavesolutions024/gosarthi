@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Header.scss";
 
-import logo from "../../assets/temp_logo.png";
+import logo from "../../assets/temp_logo.jpeg";
 import Hamburger from "hamburger-react";
 const Header = ({setPopUp}) => {
   const [active, setActive] = useState(false);

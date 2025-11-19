@@ -9,6 +9,7 @@ import Faq from "../comp/faq/Faq";
 import Vehicels from "../comp/vehicels/Vehicels";
 import { IoCallOutline } from "react-icons/io5";
 import Packages from "../comp/packagee/Packages";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -22,17 +23,17 @@ const Home = () => {
       <Faq />
       <Packages />
 
-      <div className="whats_app">
+      <a href="https://wa.me/+918482940705" target="_blank" className="whats_app">
         <span>
           <FaWhatsapp />
         </span>
-      </div>
+      </a>
 
-      <div className="call">
+      <a href="tel:+918482940705" className="call">
         <span>
           <IoCallOutline />
         </span>
-      </div>
+      </a>
     </>
   );
 };
