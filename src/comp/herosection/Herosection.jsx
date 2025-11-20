@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
-const Herosection = () => {
+const Herosection = ({setPopUp}) => {
   const heroSlides = [
     {
       title: "Plan your trip now",
@@ -40,7 +40,7 @@ const Herosection = () => {
 
   return (
     <>
-      <div class="herosection_parent bg-img-cover parent">
+      <div className="herosection_parent bg-img-cover parent">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -60,13 +60,13 @@ const Herosection = () => {
               className="bg-img-cover"
               style={{ backgroundImage: `url(${slide.img})` }}
             >
-               <div class="overlay_hero"></div>
+               <div className="overlay_hero"></div>
               <div className="herosection_cont cont">
                 <div class="hero_content">
                   <h4 className="header_text">{slide.title}</h4>
                   <h1 className="hero_heading">{slide.heading}</h1>
                   <p className="hero_para">{slide.desc}</p>
-                  <div className="btn" style={{ width: "fit-content" }}>
+                  <div onClick={() => setPopUp(true)} className="btn" style={{ width: "fit-content" }}>
                     {slide.btnText}
                   </div>
                 </div>

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./Header.scss";
-
-import logo from "../../assets/temp_logo.jpeg";
+import logo from "../../assets/temp_logo.png";
 import Hamburger from "hamburger-react";
-const Header = ({setPopUp}) => {
+import { Link } from "react-router-dom";
+const Header = ({ setPopUp }) => {
   const [active, setActive] = useState(false);
   const [isOpen, setOpen] = useState(false);
   useEffect(() => {
@@ -31,18 +31,19 @@ const Header = ({setPopUp}) => {
         }
       >
         <div class="header_cont cont">
-          <div class="logo">
+          <Link to="/" class="logo">
             <img src={logo} alt="" />
-          </div>
+          </Link>
           <div class="nav_section">
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Our Vehicels</a>
-            <a href="">Facilities</a>
-            <a href="">Packages</a>
+            <a href="#about">About</a>
+            <a href="#vehicles">Our Vehicels</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#packages">Packages</a>
           </div>
           <div class="contact_us">
-            <div class="btn" onClick={()=>setPopUp(true)} >Contact Us</div>
+            <div class="btn" onClick={() => setPopUp(true)}>
+              Contact Us
+            </div>
           </div>
 
           <div class="hamburger">
@@ -52,11 +53,21 @@ const Header = ({setPopUp}) => {
 
         {isOpen && (
           <div class="mobile_section">
-            <a href=""  onClick={()=>setOpen(false)} >Home</a>
-            <a href=""  onClick={()=>setOpen(false)}  >About</a>
-            <a href="" onClick={()=>setOpen(false)}  >Our Vehicels</a>
-            <a href="" onClick={()=>setOpen(false)}  >Facilities</a>
-            <a href="" onClick={()=>setOpen(false)}  >Gallery</a>
+            <a href="" onClick={() => setOpen(false)}>
+              Home
+            </a>
+            <a href="" onClick={() => setOpen(false)}>
+              About
+            </a>
+            <a href="" onClick={() => setOpen(false)}>
+              Our Vehicels
+            </a>
+            <a href="" onClick={() => setOpen(false)}>
+              Facilities
+            </a>
+            <a href="" onClick={() => setOpen(false)}>
+              Gallery
+            </a>
           </div>
         )}
       </div>

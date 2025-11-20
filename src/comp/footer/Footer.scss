@@ -36,6 +36,7 @@
 
         a {
           color: rgb(187, 187, 187);
+          text-decoration: none;
 
           &:hover {
             color: var(--accent);
@@ -48,6 +49,9 @@
         flex-direction: column;
         gap: var(--unit);
         .contact-wrap {
+          a{
+            text-decoration: none;
+          }
           .location {
             display: flex;
             gap: calc(var(--unit));

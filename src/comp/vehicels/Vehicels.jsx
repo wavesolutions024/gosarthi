@@ -5,41 +5,39 @@ import ertiga from "../../assets/ertiga.png";
 import innova from "../../assets/innova.png";
 import swift from "../../assets/swift.jpeg";
 
-const Vehicels = () => {
+const Vehicels = ({setPopUp}) => {
   const [showInfo, setShowInfo] = useState(false);
+  
 
   const vehicle_image = [
     {
       name: "Innova",
       image: innova,
       price: "₹20 per km ",
-      head:"Minimum package: ₹300",
-      content:
-        "Toll, parking, state tax, and driver food extra",
+      head: "Minimum package: ₹300",
+      content: "Toll, parking, state tax, and driver food extra",
       tag: "20rs/km",
     },
     {
       name: "Ertiga",
       image: ertiga,
       price: "₹15 per km ",
-      head:"Minimum package: ₹300",
-      content:
-        "Toll, parking, state tax, and driver food extra",
+      head: "Minimum package: ₹300",
+      content: "Toll, parking, state tax, and driver food extra",
       tag: "15rs/km",
     },
     {
       name: "Swift",
       image: swift,
       price: "₹12 per km ",
-      head:"Minimum package: ₹300",
-      content:
-        "Toll, parking, state tax, and driver food extra",
+      head: "Minimum package: ₹300",
+      content: "Toll, parking, state tax, and driver food extra",
       tag: "12rs/km",
     },
   ];
   return (
     <>
-      <div class="vehicels_parent parent">
+      <div class="vehicels_parent parent" id="vehicles">
         <div class="vehicels_cont cont">
           <h2>Our Vehicels</h2>
           <div className="list">
@@ -60,7 +58,9 @@ const Vehicels = () => {
                     Info
                     <FaArrowUpLong />
                   </span>
-                  <div className="btn">Contact Now</div>
+                  <div onClick={() => setPopUp(true)} className="btn">
+                    Contact Now
+                  </div>
                 </div>
 
                 <div

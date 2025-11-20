@@ -24,10 +24,10 @@ function App() {
           <BeforeHeader />
           <Header setPopUp={setPopUp} />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home setPopUp={setPopUp} />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-          <BeforeFooter />
+          <BeforeFooter setPopUp={setPopUp} />
           <Footer />
         </BrowserRouter>
       </div>

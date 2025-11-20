@@ -23,41 +23,55 @@ const Footer = () => {
                 expense.
               </p>
             </div>
-              <div className="cont_info">
+            <div className="cont_info">
               <h4>Contact Info</h4>
 
               <div className="contact-wrap">
-                <div className="location">
+                <a
+                  href="https://maps.app.goo.gl/TjSSxSFLGeZPuwMg9"
+                  target="_blank"
+                  className="location"
+                >
                   <span>
                     <IoLocationSharp />
                   </span>
-                  <p>08 W 36th St, New York, NY 10001</p>
-                </div>
-                <div className="location">
+                  <p>
+                    B-23,Sidhivinayak Appartment,Kasturba Housing
+                    Society,Vishrantwadi
+                  </p>
+                </a>
+                <a
+                  href="tel:+918482940705"
+                  target="_blank"
+                  className="location"
+                >
                   <span>
                     <MdPhone />
                   </span>
                   <p>+91 8482940705</p>
-                </div>
-                <div className="location">
+                </a>
+                <a
+                  href="mailto:gosarathi4@gmail.com"
+                  target="_blank"
+                  className="location"
+                >
                   <span>
                     <FaEnvelope />
                   </span>
-                  <p>contact@example.com</p>
-                </div>
+                  <p>gosarathi4@gmail.com</p>
+                </a>
               </div>
             </div>
             <div className="quick_link">
               <h4>Quick Links</h4>
 
-              <a>About</a>
-              <a>Features</a>
-              <a>Blog</a>
-              <a>Carrer</a>
-              <a>Packages</a>
+              <a href="#about">About</a>
+              <a href="#vehicles">Our Vehicels</a>
+              <a href="#facilities">Facilities</a>
+              <a href="#packages">Packages</a>
             </div>
-          
-            <div className="social_icon">
+
+            {/* <div className="social_icon">
               <h4>Social Network</h4>
 
               <div className="social-wrap">
@@ -65,7 +79,7 @@ const Footer = () => {
                 <span><GrInstagram /></span>
                 <span><FaLinkedinIn /></span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

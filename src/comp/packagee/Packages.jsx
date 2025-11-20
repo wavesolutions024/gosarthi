@@ -38,7 +38,7 @@ const Packages = () => {
 
   return (
     <>
-      <div className="parent packagee_parent">
+      <div className="parent packagee_parent" id="packages">
         <div className="cont packagee_cont">
           <h2>Tours and Packages</h2>
           <p>

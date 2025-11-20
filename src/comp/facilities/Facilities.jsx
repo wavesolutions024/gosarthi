@@ -6,7 +6,7 @@ const Facilities = () => {
 
   return (
     <>
-      <div className="parent facility_parent">
+      <div className="parent facility_parent" id="facilities">
         <div className="facility-left bg-img-cover"></div>
         <div className="facility-right">
           <h2>Only Quality For Clients</h2>

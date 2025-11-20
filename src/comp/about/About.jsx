@@ -4,7 +4,7 @@ import "./About.scss";
 const About = () => {
   return (
     <>
-      <div className="parent about-parent">
+      <div className="parent about-parent" id="about">
         <div className="cont about-cont">
           <div className="about-left">
             <h3>

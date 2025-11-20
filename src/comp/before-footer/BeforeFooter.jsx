@@ -2,7 +2,7 @@ import React from "react";
 import "./BeforeFooter.scss";
 import { MdPhone } from "react-icons/md";
 
-const BeforeFooter = () => {
+const BeforeFooter = ({setPopUp}) => {
   return (
     <>
       <div className="parent bf_parent bg-img-cover">
@@ -20,7 +20,7 @@ const BeforeFooter = () => {
               </span>
               <span className="call_text">Call Us Now</span>
               <h3>8482940705</h3>
-              <div className="btn">Contact Us</div>
+              <div className="btn" onClick={() => setPopUp(true)}>Contact Us</div>
             </div>
           </div>
         </div>

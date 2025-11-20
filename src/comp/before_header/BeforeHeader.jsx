@@ -10,7 +10,7 @@ const BeforeHeader = () => {
       <div class="before_header parent">
         <div class="before_header_cont cont">
           <div class="left">
-            <a href="">
+            <a href="tel:+91 8482940705" target="_blank">
               <span>
                 <FaPhone />
               </span>
@@ -18,7 +18,7 @@ const BeforeHeader = () => {
             </a>
           </div>
 
-          <div class="right">
+          {/* <div class="right">
             <a href="">
               <FaInstagram />
             </a>
@@ -28,7 +28,7 @@ const BeforeHeader = () => {
             <a href="">
               <IoLocationSharp />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
