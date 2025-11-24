@@ -12,6 +12,8 @@ import ContactPopup from "./comp/contact_popup/ContactPopup";
 import NotFound from "./comp/notfound/NotFound";
 import Home from "./pages/Home";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Terms from "./pages/terms/Terms";
+import Privacy from "./pages/privacy/Privacy";
 
 function App() {
   const [popup, setPopUp] = useState(false);
@@ -25,6 +27,8 @@ function App() {
           <Header setPopUp={setPopUp} />
           <Routes>
             <Route path="/" element={<Home setPopUp={setPopUp} />} />
+            <Route path="/terms-condition" element={<Terms/>} />
+            <Route path="/privacy-policy" element={<Privacy/>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <BeforeFooter setPopUp={setPopUp} />

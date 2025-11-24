@@ -1,11 +1,34 @@
 import React, { useState } from "react";
 import "./Facilities.scss";
+import { Helmet } from "react-helmet";
 
 const Facilities = () => {
   const [tab, setTab] = useState("Luxury");
 
   return (
     <>
+      <Helmet>
+        <title>Car Rental Facilities | Luxury, Comfort & Prestige</title>
+        <meta
+          name="description"
+          content="Explore premium car rental facilities offering Luxury, Comfort, and Prestige cars. High-quality vehicles for travel across Pune and Maharashtra."
+        />
+        <meta
+          name="keywords"
+          content="car rental pune, luxury cars pune, comfort cars, prestige cars, rental services"
+        />
+        <link rel="canonical" href="https://gosarathi.com/facilities" />
+
+        {/* OG TAGS */}
+        <meta property="og:title" content="Best Car Rental Facilities" />
+        <meta
+          property="og:description"
+          content="Choose from Luxury, Comfort, and Prestige car rentals."
+        />
+        <meta property="og:url" content="https://gosarathi.com/facilities" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <div className="parent facility_parent" id="facilities">
         <div className="facility-left bg-img-cover"></div>
         <div className="facility-right">

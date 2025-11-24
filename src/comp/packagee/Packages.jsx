@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 import lonavala from "../../assets/lonavala.jpg";
 import mahabaleshwar from "../../assets/Mahabaleshwar.jpg";
+import { Helmet } from "react-helmet";
 
 const Packages = () => {
   const data = [
@@ -38,11 +39,28 @@ const Packages = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Tours & Packages | Go Sarthi Travel Services</title>
+        <meta
+          name="description"
+          content="Explore curated tours and travel packages from Pune to popular destinations like Mumbai, Lonavala, Mahabaleshwar, and more with Go Sarthi."
+        />
+        <meta
+          name="keywords"
+          content="Pune to Mumbai, Pune to Mahabaleshwar, Pune to Lonavala, Go Sarthi Tours, Maharashtra travel packages, taxi packages Pune"
+        />
+        <link rel="canonical" href="https://gosarathi.com/packages" />
+      </Helmet>
+
       <div className="parent packagee_parent" id="packages">
         <div className="cont packagee_cont">
           <h2>Tours and Packages</h2>
           <p>
-          Explore the beauty of Maharashtra with our specially curated travel experiences. Whether you're looking for a quick weekend getaway or a scenic road trip through the Western Ghats, we’ve got you covered. Discover stunning forts, lush valleys, and serene hill stations — all just a drive away from Pune!
+            Explore the beauty of Maharashtra with our specially curated travel
+            experiences. Whether you're looking for a quick weekend getaway or a
+            scenic road trip through the Western Ghats, we’ve got you covered.
+            Discover stunning forts, lush valleys, and serene hill stations —
+            all just a drive away from Pune!
           </p>
           <Swiper
             effect={"coverflow"}

@@ -1,9 +1,24 @@
 import React from "react";
 import "./About.scss";
+import { Helmet } from "react-helmet";
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>About Go Sarthi | Car Rental & Luxury Car Services</title>
+        <meta
+          name="description"
+          content="Go Sarthi offers a wide range of commercial and luxury cars for rental. Our mission is to provide high-quality, convenient, and customer-friendly car rental services."
+        />
+        <meta
+          name="keywords"
+          content="Go Sarthi, Car Rental, Luxury Cars, Commercial Cars, Pune Car Rental, Self Drive Cars, Hire Cars"
+        />
+        <meta name="author" content="Go Sarthi" />
+        <link rel="canonical" href="https://gosarathi.com/about" />
+      </Helmet>
+
       <div className="parent about-parent" id="about">
         <div className="cont about-cont">
           <div className="about-left">

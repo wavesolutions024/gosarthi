@@ -71,6 +71,15 @@ const Footer = () => {
               <a href="#packages">Packages</a>
             </div>
 
+            <div className="social_icon">
+              <h4>Extra Links</h4>
+
+              <div className="social-wrap">
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/terms-condition">Terms and Conditions</a>
+              </div>
+            </div>
+
             {/* <div className="social_icon">
               <h4>Social Network</h4>
 

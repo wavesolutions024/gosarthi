@@ -1,0 +1,37 @@
+.parent_policy {
+  height: auto;
+  padding: 50px 20px;
+  .cont_policy {
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 2rem;
+      font-weight: 700;
+      color: #222;
+    }
+
+    h2 {
+      margin-top: 22px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #333;
+    }
+
+    p,
+    li {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.7;
+      margin-top: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+
+      li {
+        list-style: disc;
+      }
+    }
+  }
+}

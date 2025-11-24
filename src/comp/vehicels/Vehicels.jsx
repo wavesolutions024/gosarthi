@@ -4,10 +4,10 @@ import { FaArrowUpLong } from "react-icons/fa6";
 import ertiga from "../../assets/ertiga.png";
 import innova from "../../assets/innova.png";
 import swift from "../../assets/swift.jpeg";
+import { Helmet } from "react-helmet";
 
-const Vehicels = ({setPopUp}) => {
+const Vehicels = ({ setPopUp }) => {
   const [showInfo, setShowInfo] = useState(false);
-  
 
   const vehicle_image = [
     {
@@ -37,6 +37,19 @@ const Vehicels = ({setPopUp}) => {
   ];
   return (
     <>
+      <Helmet>
+        <title>Vehicles | Go Sarthi Car Rental Services</title>
+        <meta
+          name="description"
+          content="Explore Go Sarthi’s vehicle collection including Innova, Ertiga, and Swift. Affordable prices with reliable car rental services for all travel needs."
+        />
+        <meta
+          name="keywords"
+          content="Go Sarthi vehicles, Innova rent Pune, Ertiga rent Pune, Swift car rental, Pune cab service, outstation taxi Pune"
+        />
+        <link rel="canonical" href="https://gosarathi.com/vehicles" />
+      </Helmet>
+
       <div class="vehicels_parent parent" id="vehicles">
         <div class="vehicels_cont cont">
           <h2>Our Vehicels</h2>

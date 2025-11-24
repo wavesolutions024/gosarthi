@@ -1,0 +1,29 @@
+.parent_terms {
+    height: auto;
+    padding: 50px 20px;
+  .cont_terms {
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: #222;
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    p,
+    li {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  }
+}
