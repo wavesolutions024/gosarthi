@@ -53,21 +53,21 @@ const Header = ({ setPopUp }) => {
 
         {isOpen && (
           <div class="mobile_section">
-            <a href="" onClick={() => setOpen(false)}>
+            <a href="/" onClick={() => setOpen(false)}>
               Home
             </a>
-            <a href="" onClick={() => setOpen(false)}>
+            <a href="#about" onClick={() => setOpen(false)}>
               About
             </a>
-            <a href="" onClick={() => setOpen(false)}>
+            <a href="#vehicles" onClick={() => setOpen(false)}>
               Our Vehicels
             </a>
-            <a href="" onClick={() => setOpen(false)}>
+            <a href="#facilities" onClick={() => setOpen(false)}>
               Facilities
             </a>
-            <a href="" onClick={() => setOpen(false)}>
+            {/* <a href="" onClick={() => setOpen(false)}>
               Gallery
-            </a>
+            </a> */}
           </div>
         )}
       </div>
